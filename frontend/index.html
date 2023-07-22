@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facility Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;," />
+  </head>
+  <body>
+    <h1>Facility Booking</h1>
+    <form id="bookingForm">
+      <label for="facility">Select Facility:</label>
+      <select id="facility" required>
+        <option value="Clubhouse">Clubhouse</option>
+        <option value="TennisCourt">Tennis Court</option>
+      </select>
+      <br />
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" required />
+      <br />
+      <label for="startTime">Select Start Time:</label>
+      <input type="time" id="startTime" required />
+      <br />
+      <label for="endTime">Select End Time:</label>
+      <input type="time" id="endTime" required />
+      <br />
+      <button type="submit">Book Facility</button>
+    </form>
+    <div id="output">
+      <h2>Booking Details:</h2>
+      <table id="outputTable"></table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
